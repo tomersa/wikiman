@@ -1,9 +1,10 @@
-all: build
+all: test 
 
-build: clean
+test: install clean
 	python src/main.py Israel
 
-# 	sudo python -m pip install wikipedia
+install:
+	python -m pip install wikipedia
 	
 clean: 
 	mkdir -p bin

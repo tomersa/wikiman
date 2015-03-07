@@ -1,10 +1,23 @@
-import nltk   
-from bs4 import *
-from urllib import urlopen
+import sys
+import wikipedia
+import codecs
 
+if __name__ == "__main__":
+    name_arg = codecs.encode(sys.argv[1])
+    search_term = codecs.encode(wikipedia.search(name_arg)[0]) #Using first result as search
 
-url = "http://en.wikipedia.org/wiki/Bradford"
-html = urlopen(url).read()
-raw = BeautifulSoup(html)
-clean_text = raw.get_text().encode('utf-8')
-print(clean_text)
+    print u"Searching for: {0}".format(search_term)
+
+    wiki_page = wikipedia.page(search_term)
+
+    print u"Title: {0}".format(wiki_page.title)
+    print u"\n\n"
+    print codecs.encode(wiki_page.content, 'utf-8')
+    print u"Based on url: {0}".format(wiki_page.url)
+
+# >>> wiki_page.links[0]
+# # u'1790 United States Census'
+
+# >>> wikipedia.set_lang("fr")
+# >>> wikipedia.summary("Facebook", sentences=1)
+# # Facebook est un service de

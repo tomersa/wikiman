@@ -1,17 +1,11 @@
 all: test 
 
 test:
-	wiki Israel | less
+	wiki "Hello world" | less
 
 install: clean
 	python -m pip install wikipedia
-	
-	###Comment out the following line if using fedora###
-	apt-get install less
-	
-	###Uncomment the following line if using fedora###
-	#yum install less
-	
+
 	##Installing script
 	cp src/wikiman.sh /usr/bin/wiki
 	

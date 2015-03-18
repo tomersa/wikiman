@@ -30,8 +30,9 @@ full details.
 Credits
 -------
 
--  <https://github.com/goldsmith/Wikipedia>`__ for making a great easy to use wikipedia library for python.
+-  goldsmith's `Wikipedia Project <https://github.com/goldsmith/Wikipedia>`__ for making
+   a great easy to use wikipedia library for python.
 -  The `Wikimedia
    Foundation <http://wikimediafoundation.org/wiki/Home>`__ for giving
-   the world free access to data
+   the world free access to data.
 

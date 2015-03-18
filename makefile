@@ -15,7 +15,6 @@ install: clean
 clean: 
 	mkdir -p bin
 	rm -f bin/*.bin
-	rm -f /etc/profile.d/wikiman.sh
 	rm -f /usr/bin/wiki
 	rm -rf /usr/lib/wikiman/
 	

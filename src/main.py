@@ -3,12 +3,11 @@ import wikipedia
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-				print "Usage: wiki [search term]"
-				sys.exit(0)
+	print "Usage: wiki [search term]"
+	sys.exit(0)
     
     name_arg = " ".join(sys.argv[1:])
     search_term = wikipedia.search(name_arg)[0]  # Using first result as search
-    # output = []
 
     print u"Searching for: {0}".format(search_term)
 

@@ -1,6 +1,9 @@
 all: test 
 
 test:
+	python src/main.py "Hello World" | less
+
+test_installed:
 	wiki "Hello world" | less
 
 install: clean

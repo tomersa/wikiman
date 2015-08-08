@@ -9,6 +9,14 @@ Use it the same way you would use man, but for whatever search term you want.
 
   $ wiki "Hello World"
 
+Try without installing
+----------------------
+Inorder to try wikiman without installation run:
+
+.. code:: bash
+
+  $ make test
+
 Installation
 ------------
 
